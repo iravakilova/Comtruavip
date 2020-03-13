@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    max-width: 1174px;
+    margin: 0 auto;
+    background: green;
+}
+
+header{
+    width: 100%;
+    max-width: 1920px;
+    min-height: 800px;
+    background: url(/img/header-bd2.png) no-repeat center top;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

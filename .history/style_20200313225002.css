@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+    max-width: 1174px;
+    margin: 0 auto;
+    
+}
+
+header{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #000;
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+}
