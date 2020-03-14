@@ -1,3 +1,15 @@
+@font-face{
+    font-family: "HelveticaNeue";
+    src: url('fonts/HelveticaNeue.ttf');
+    src: url('fonts/HelveticaNeueBold.ttf');
+    src: url('fonts/HelveticaNeueLight.ttf');
+    src: url('fonts/HelveticaNeueMedium.ttf');
+    src: url('fonts/HelveticaNeueThin.ttf');
+    src: url('fonts/HelveticaNeueRegular.ttf');  
+}
+body{
+    font-family: "HelveticaNeue";
+}
 .container{
     width: 100%;
     max-width: 1174px;
@@ -17,6 +29,7 @@ header{
     z-index: 2;
     opacity: 1;
     color: #fff;
+
 }
 header::before {
     display: block;
@@ -116,6 +129,7 @@ header::before {
     letter-spacing: 0.36px;
 }
 .about__table{
+    width: 100%;
     padding: 98px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -151,3 +165,74 @@ header::before {
     line-height: 24px;
     padding-top: 25px;
 }
+
+/* download */
+
+.download{
+    width: 100%;
+    max-width: 1920px;
+    min-height: 930px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+.download__img{
+    padding: 109px 0 61px;
+    padding-left: 13%;
+}
+.download__title{
+    color: #343434;
+    font-size: 36px;
+    font-weight: 700;
+    /* line-height: 50px; */
+    letter-spacing: 0.9px;
+    padding-bottom: 49px;
+}
+.download__descr{
+    color: #5b5b5b;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+}
+.download__button{
+    padding-top: 97px;
+}
+.download__button button{
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid #ff8400;
+    margin-right: 30px;
+}
+.download__button button:hover{
+    background: #ff8400;
+}
+.download__button a{
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 1.15px;
+    color: #ff8400;
+    display: block;
+}
+.download__button button a:hover{
+    color: #fff;
+}
+.download__button img{
+    padding: 22px 26px;
+    border-right: 2px solid #ff8400;
+    border-radius: 5px;
+    background: #f17201;
+}
+.download__button span{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 21px 50px 7px;    
+}
+
+/* workflow */
