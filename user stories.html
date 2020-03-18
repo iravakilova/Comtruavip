@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user stories</title>
+<style>
+.user__inner{
+    width: 100%;
+    max-width: 1174px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: pink;
+    }
+.user__var{
+    position: relative;
+    width:100%;
+    max-width: 412px;
+    margin: 0 auto;
+}
+.user__avatar{
+    display: block;
+    margin: 0 auto;
+    width: 135px;
+    height: 135px;
+}
+.user__avatar:hover{
+    padding-top: 25px;
+    transition: all 0.6s ease-out;
+    transform: scale(1.33);
+}
+.user__article{
+    opacity: 0;
+}
+.user__var:hover .user__article{
+    transition-duration:0.6s;
+    text-align:center;
+    margin-top: 55px;
+    opacity: 1;
+}
+.user__article h4{
+    color: #00baff;
+    font-size: 24px;
+    font-weight: 700;
+    /* line-height: 68px; */
+    letter-spacing: 0.6px;
+}
+.user__article p{
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.18px;
+}
+.user__slider {
+  width: 100%;
+  max-width: 1174px;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+  position: relative;
+  padding: 121px 0 101px;
+}
+
+.user__slider input{
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.switch label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 15px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+  background-color: black;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+  background-color: black;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+  background-color: black;
+}
+#btn1:checked~.user__inner .user__var {
+  transform: translate(0);
+}
+
+#btn2:checked~.user__inner .user__var {
+  transform: translate(-840px);
+}
+
+#btn3:checked~.user__inner .user__var {
+  transform: translate(-1680px);
+}
+</style>
+</head>
+<body>
+    <div class="user__slider">
+        <input type="radio" name="switch" id="btn1" checked>
+        <input type="radio" name="switch" id="btn2">
+        <input type="radio" name="switch" id="btn3">
+        
+        <div class="switch">
+          <label for="btn1"></label>
+          <label for="btn2"></label>
+          <label for="btn3"></label>
+        </div>
+
+        <div class="user__inner">
+            <div class="user__var">
+                <img src="img/user-1.png" class="user__avatar">
+                <div class="user__article">
+                    <h4>Jonathan Laene</h4>
+                    <p>Sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod.</p>
+                    <div class="user__star">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="user__var">
+                <img src="img/user-2.png" class="user__avatar">
+                <div class="user__article">
+                    <h4>Jonathan Laene</h4>
+                    <p>Sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod.</p>
+                    <div class="user__star">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="user__var">
+                <img src="img/user-3.png" class="user__avatar">
+                <div class="user__article">
+                    <h4>Jonathan Laene</h4>
+                    <p>Sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod.</p>
+                    <div class="user__star">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                        <img src="img/user-star.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
