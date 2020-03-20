@@ -1,15 +1,6 @@
 
 @import "reset";
-
-@font-face{
-    font-family: "HelveticaNeue";
-    src: url('app/fonts/HelveticaNeue.ttf');
-    src: url('app/fonts/HelveticaNeueBold.ttf');
-    src: url('app/fonts/HelveticaNeueLight.ttf');
-    src: url('app/fonts/HelveticaNeueMedium.ttf');
-    src: url('app/fonts/HelveticaNeueThin.ttf');
-    src: url('app/fonts/HelveticaNeueRegular.ttf');  
-}
+@import "font";
 
 body{
     font-family: "HelveticaNeue";
@@ -28,4 +19,4 @@ body{
 @import "user";
 @import "contact";
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+// @media only screen and (min-width : 320px) and (max-width : 480px) {
