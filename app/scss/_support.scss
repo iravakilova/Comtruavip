@@ -1,0 +1,73 @@
+/* support */
+
+.support {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(app/img/header-underbg.png) no-repeat center top;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  
+    .support__title {
+      font-size: 30px;
+      font-weight: 700;
+  
+      /* line-height: 68px; */
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      padding-top: 150px;
+      text-align: center;
+    }
+  
+    .support__descr {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 36px;
+      letter-spacing: 0.18px;
+      text-align: center;
+      padding: 29px 11% 97px;
+    }
+  
+    .support__form {
+      text-align: center;
+      padding-bottom: 150px;
+  
+      .support__input {
+        border-radius: 5px;
+        border: 2px solid #fff;
+        background: transparent;
+        padding: 27px 0 25px 30px;
+        width: 100%;
+        max-width: 600px;
+        color: #fffefe;
+        font-size: 16px;
+        font-weight: 300;
+  
+        /* line-height: 36px; */
+        letter-spacing: 1.2px;
+        outline: none;
+        margin-right: 28px;
+      }
+  
+      .support__button {
+        box-shadow: 0 0 25px rgba(255, 132, 0, 0.65);
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 26px 45px;
+        outline: none;
+  
+        a {
+          text-decoration: none;
+          color: #ff8400;
+          font-size: 18px;
+          font-weight: 500;
+  
+          /* line-height: 36px; */
+          text-transform: uppercase;
+          letter-spacing: 1.8px;
+        }
+      }
+    }
+  }
