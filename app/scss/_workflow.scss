@@ -80,3 +80,83 @@
       }
     }
   }
+
+  @media only screen and (max-width: 480px) and (min-width: 320px){
+
+    .workflow {
+      max-width: 480px;
+      min-width: 320px;
+      max-height: 568px;
+      position: relative;
+      
+    
+      .workflow__inner {
+        width: 90%;
+        max-width: 480px;
+        min-width: 320px;
+        margin: 0 auto;
+        padding: 50px 0 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: #f8f9f9;
+        padding-left: 0%;
+    
+        .workflow__title {
+          font-size: 24px;
+          padding-bottom: 15px;
+          text-align: center;
+        }
+    
+        .workflow__nav {
+          width: 25%;
+          margin: 0 auto;
+          padding-bottom: 30px;
+          text-align: center;
+    
+          a {
+            display: block;
+            font-size: 14px;
+            line-height: 28px;
+            margin-right: 0%;
+    
+            &:hover {
+              border-bottom: 2px solid #ff8400;
+              padding-bottom: 0px;
+            }
+          }
+        }
+    
+        .workflow__subtitle {
+          font-size: 24px;
+          text-align: center;
+          padding-bottom: 15px;
+          width: 90%; 
+          margin: 0 auto;
+        }
+    
+        .workflow__descr {
+          font-size: 14px;
+          line-height: 24px;
+          width: 90%; 
+          text-align: center;
+        }
+      }
+    
+      .workflow__img {
+        width: 100%;
+        max-width: 480px;
+        position: absolute;
+        top: 60%;
+        left: 0%;
+        z-index: 1;
+    
+        img {
+          width: 100%;
+          overflow: hidden;
+        }
+      }
+    }
+
+  }

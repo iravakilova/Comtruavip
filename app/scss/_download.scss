@@ -69,3 +69,56 @@
       }
     }
   }
+
+  @media only screen and (max-width: 480px) and (min-width: 320px){
+
+    .download {
+      max-width: 480px;
+      min-width: 320px;
+      display: block;
+    
+      .download__img {
+        padding: 50px 0 30px;
+        padding-left: 0;
+        text-align: center;
+
+        img{
+          width: 80%;
+        }
+      }
+    
+      .download__title {
+        font-size: 24px;
+        padding-bottom: 25px;
+        text-align: center;
+      }
+    
+      .download__descr {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+      }
+    
+      .download__button {
+        padding: 40px 0;
+        text-align: center;
+    
+        button {
+          margin-right: 0px;
+    
+          a {
+            font-size: 18px;
+            line-height: 18px;
+            padding-bottom: 10px;
+          }
+    
+          span {
+            font-size: 8px;
+            line-height: 30px;
+            padding: 15px;
+          }
+        }
+      }
+    }
+
+  }

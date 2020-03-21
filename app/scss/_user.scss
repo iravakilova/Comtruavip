@@ -50,7 +50,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     overflow: hidden;
 
     .user__var {
@@ -119,4 +119,105 @@
 
 #btn3:checked ~ .user__inner .user__var {
   transform: translate(-700px);
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px){
+
+  .user {
+    max-width: 480px;
+    min-width: 320px;
+  
+    .user__title {
+      font-size: 24px;
+      padding-top: 50px;
+    }
+  
+    .user__slider {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      margin: 50px 0 50px;
+  
+      .switch {
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        text-align: center;
+        width: 100%;
+  
+        label {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          margin: 0 15px;
+          border-radius: 50%;
+          background-color: #f17201;
+        }
+      }
+    }
+  
+    .user__inner {
+      width: 100%;
+      max-width: 420px;
+      align-items: start;
+  
+      .user__var {
+        max-width: 420px;
+  
+        &:hover .user__article {
+          margin-top: 20px;
+        }
+  
+        .user__avatar {
+          width: 65px;
+          height: 65px;
+  
+          &:hover {
+            padding-top: 10px;
+            transform: scale(1.2);
+          }
+        }
+  
+        .user__article {
+  
+          h4 {
+            font-size: 16px;
+            line-height: 20px;
+            padding-bottom: 12px;
+          }
+  
+          p {
+            color: #5c5c5c;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.18px;
+            padding-bottom: 5px;
+          }
+          .user__star{
+              img{
+                width: 8px;
+                height: auto;
+              }
+          }
+        }
+      }
+    }
+  }
+  
+  #btn1:checked ~ .switch label[for="btn1"], #btn2:checked ~ .switch label[for="btn2"], #btn3:checked ~ .switch label[for="btn3"] {
+    background-color: black;
+  }
+  
+  #btn1:checked ~ .user__inner .user__var {
+    transform: translate(0);
+  }
+  
+  #btn2:checked ~ .user__inner .user__var {
+    transform: translate(-350px);
+  }
+  
+  #btn3:checked ~ .user__inner .user__var {
+    transform: translate(-700px);
+  }
+
 }
