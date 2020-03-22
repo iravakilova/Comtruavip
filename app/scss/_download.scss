@@ -122,3 +122,40 @@
     }
 
   }
+
+  @media only screen and (max-width: 1024px) and (min-width: 768px){
+
+    .download {
+      max-width: 1024px;
+      min-width: 768px;
+      display: block;
+    
+      .download__img {
+        padding: 50px 0 30px;
+        padding-left: 0%;
+        text-align: center;
+
+        img{
+          width: 70%;
+          height: auto;
+        }
+      }
+    
+      .download__title {
+        font-size: 32px;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+    
+      .download__descr {
+        font-size: 16px;
+        text-align: center;
+      }
+    
+      .download__button {
+        text-align: center;
+        padding: 60px 0;
+      }
+    }
+
+  }

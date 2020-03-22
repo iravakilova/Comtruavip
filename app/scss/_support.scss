@@ -115,3 +115,46 @@
     }
 
   }
+
+  @media only screen and (max-width: 1024px) and (min-width: 768px){
+
+    .support {
+      max-width: 1024px;
+      min-width: 768px;
+    
+      .support__title {
+        font-size: 20px;
+        padding-top: 50px;
+      }
+    
+      .support__descr {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: 0.18px;
+        text-align: center;
+        padding: 15px 10% 30px;
+      }
+    
+      .support__form {
+        text-align: center;
+        padding-bottom: 50px;
+    
+        .support__input {
+          padding: 20px;
+          font-size: 12px;
+          margin-right: 0px;
+        }
+    
+        .support__button {
+          padding: 15px 30px;
+          margin-top: 20px;
+    
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+  }

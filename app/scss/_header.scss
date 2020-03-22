@@ -66,7 +66,6 @@ header {
     .header__descr {
       font-size: 20px;
       font-weight: 400;
-      line-height: 40px;
       line-height: 36px;
       letter-spacing: 0.2px;
       padding: 49px 0 121px;
@@ -153,4 +152,61 @@ header {
       }
     }
   }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px){
+
+  header {
+    width: 100%;
+    min-width : 768px;
+    max-width : 1024px;
+    min-height: 670px;
+  
+    .header__top {
+      padding-top: 20px;
+  
+      .header__nav {
+        font-size: 15px;
+  
+        a {
+          margin-left: 30px;
+        }
+      }
+    }
+  
+    .header__mine {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 60px;
+  
+      .header__title {
+        font-size: 26px;
+      }
+  
+      .header__descr {
+        font-size: 12px;
+        padding: 25px 0 60px;
+      }
+  
+      .header__button {
+        button {
+  
+          a {
+            font-size: 14px;
+            padding: 15px 25px;
+          }
+        } 
+      }
+
+      .header__right{
+
+        img{
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+  }
+
 }
